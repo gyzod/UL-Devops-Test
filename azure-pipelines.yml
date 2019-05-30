@@ -22,10 +22,10 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
-- task: PublishBuildArtifacts@1 
+- task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
-    artifactName: 'myWebsiteName'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
 
 - task: VSBuild@1
   inputs:
